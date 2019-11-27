@@ -1,0 +1,33 @@
+
+Showing logs for build [32mcheesydev-labs-environment-jenk-qgbwq-1[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-b2ktz[0m
+{"level":"warn","ts":1574817078.7951517,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1574817078.7958434,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mcheesydev-labs-environment-jenk-qgbwq-1[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-8mjsq[0m
+{"level":"warn","ts":1574817079.7413025,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1574817079.7435982,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+
+Showing logs for build [32mcheesydev-labs-environment-jenk-qgbwq-1[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mcheesydev-labs-environment-jenk-qgbwq-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-cheesydev-labs-environment-jenk-fjhfm[0m
+{"level":"warn","ts":1574817083.8086739,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1574817084.1401618,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/cheesydev-labs/environment-jenkinsx-production.git @ master in path /workspace/source"}
+
+Showing logs for build [32mcheesydev-labs-environment-jenk-qgbwq-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:5c5b73f835bdb91f5a06a45a4c7ed6db45122b0b,1:6c30d0370ca821ea8f6bc9ce28b2b9b6bad33121
+DEBUG: ran git fetch --unshallow origin 6c30d0370ca821ea8f6bc9ce28b2b9b6bad33121: 5c5b73f835bdb91f5a06a45a4c7ed6db45122b0b: in 
+DEBUG: ran git checkout master in 
+DEBUG: ran git reset --hard 5c5b73f835bdb91f5a06a45a4c7ed6db45122b0b in 
+DEBUG: ran clean --force -d . in 
+DEBUG: ran git merge 6c30d0370ca821ea8f6bc9ce28b2b9b6bad33121 in 
+Merged SHA 6c30d0370ca821ea8f6bc9ce28b2b9b6bad33121 with commit message 'chore: Promote jenkinsx-app-quickstart2 to version 0.0.3' into base branch master
+
+Showing logs for build [32mcheesydev-labs-environment-jenk-qgbwq-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-helm-build[0m
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository jenkins-x-chartmuseum.
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: chartmuseum.jenkins-x.io http://chartmuseum.jenkins-x.io
+Successfully added Helm repository chartmuseum.jenkins-x.io.
